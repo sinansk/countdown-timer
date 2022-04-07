@@ -10,6 +10,7 @@ let timerRunning = false;
 function timer(seconds) {
     timerRunning = true;
     pauseBtn.style.display = "inline-block";
+    pauseBtn.style.transform = "rotate(180deg)";
     ///clear any working timer, because when anyone working and other one clicked its bug
     clearInterval(countdown);
     const now = Date.now();
